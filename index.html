@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Noah Sell">
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+			<form method="post" action="https://wp.zybooks.com/form-viewer.php" target="_blank">
+				<label for="name">Full Name<span aria-hidden="true" class="required">*</span></label>
+				<input aria-describedby="required-field" type="text" name="name" id="name" required aria-required="true" autocomplete="name">
+				<label for="email">Email<span aria-hidden="true" class="required">*</span></label>
+				<input aria-describedby="required-field" type="email" name="email" id="email" required aria-required="true" autocomplete="email">
+				<label for="phone">Phone<span aria-hidden="true" class="required">*</span></label>
+				<input aria-describedby="required-field" type="tel" name="phone" id="phone" required aria-required="true" autocomplete="tel">
+				<fieldset>
+					<legend>Preferred Contact Method<span aria-hidden="true" class="required">*</span></legend>
+					<input type="radio" id="phonePreferred" name="preferredContact" value="phonePreferred" required aria-required="true">
+					<label for="phonePreferred">Phone</label>
+					<input type="radio" id="emailPreferred" name="preferredContact" value="emailPreferred">
+					<label for="emailPreferred">Email</label>
+				</fieldset>
+				<label for="state">Which state do you live in?</label>
+				<select name="homeState" id="state">
+					<option value="al">Alabama</option>
+					<option value="ak">Alaska</option>
+					<option value="az">Arizona</option>
+					<option value="ar">Arkansas</option>
+					<option value="ca">California</option>
+					<option value="co">Colorado</option>
+					<option value="ct">Connecticut</option>
+					<option value="de">Delaware</option>
+					<option value="fl">Florida</option>
+					<option value="ga">Georgia</option>
+					<option value="hi">Hawaii</option>
+					<option value="id">Idaho</option>
+					<option value="il">Illinois</option>
+					<option value="in">Indiana</option>
+					<option value="ia">Iowa</option>
+					<option value="ks">Kansas</option>
+					<option value="ky">Kentucky</option>
+					<option value="la">Louisiana</option>
+					<option value="me">Maine</option>
+					<option value="md">Maryland</option>
+					<option value="ma">Massachusetts</option>
+					<option value="mi">Michigan</option>
+					<option value="mn">Minnesota</option>
+					<option value="ms">Mississippi</option>
+					<option value="mo">Missouri</option>
+					<option value="mt">Montana</option>
+					<option value="ne">Nebraska</option>
+					<option value="nv">Nevada</option>
+					<option value="nh">New Hampshire</option>
+					<option value="nj">New Jersey</option>
+					<option value="nm">New Mexico</option>
+					<option value="ny">New York</option>
+					<option value="nc">North Carolina</option>
+					<option value="nd">North Dakota</option>
+					<option value="oh">Ohio</option>
+					<option value="ok">Oklahoma</option>
+					<option value="or">Oregon</option>
+					<option value="pa">Pennsylvania</option>
+					<option value="ri">Rhode Island</option>
+					<option value="sc">South Carolina</option>
+					<option value="se">South Dakota</option>
+					<option value="tn">Tennessee</option>
+					<option value="tx">Texas</option>
+					<option value="ut">Utah</option>
+					<option value="vt">Vermont</option>
+					<option value="va">Virginia</option>
+					<option value="wa">Washington</option>
+					<option value="wv">West Virginia</option>
+					<option value="wi">Wisconsin</option>
+					<option value="wy">Wyoming</option>
+				</select>
+				<label for="comments">Comments<span aria-hidden="true" class="required">*</span></label>
+				<textarea aria-describedby="required-field" name="comments" id="comments" required aria-required="true"></textarea>
+				<p aria-hidden="true" id="required-field"><span class="required">*</span>Required field.</p>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
